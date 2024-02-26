@@ -1,0 +1,1 @@
+//string são indexadas
