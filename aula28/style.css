@@ -1,0 +1,53 @@
+:root{
+    --blue:#0b7cc878;
+    --dark-button:#011b2c;
+}
+
+
+*{
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--blue);
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container{
+    max-width: 640px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 20px;
+}
+
+form input,form label,form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}form input{
+    font-size: 24px;
+    height:30px ;
+    padding: 0 20px;
+}form input:focus{
+    outline:1px solid var(--blue);
+}
+
+button{
+    border: none;
+    background-color: rgb(2, 82, 144);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 16px;
+    cursor: pointer;
+    margin-top: 2em;
+}
+button:hover{
+    background-color: var(--dark-button);
+}
