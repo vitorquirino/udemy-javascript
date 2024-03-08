@@ -22,7 +22,7 @@ body{
     margin: 50px auto;
     background-color: #fff;
     padding: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 20px;
 }
 
@@ -50,4 +50,9 @@ button{
 }
 button:hover{
     background-color: var(--dark-button);
+}
+.juntando{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3em;
 }
