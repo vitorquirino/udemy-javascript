@@ -56,3 +56,12 @@ button:hover{
     justify-content: space-around;
     margin-bottom: 3em;
 }
+
+.paragrafo-resultado, .paragrafo-bad{
+    background:rgb(19, 192, 138) ;
+    padding: 10px 20px;
+}
+
+.paragrafo-bad{
+    background:rgb(229, 113, 113) ;
+}

@@ -4,44 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>organização</title>
+    <title>calcule seu IMC</title>
 </head>
 <body>
 
     <section class="container"> 
-        <h1>Tabela IMC</h1>
-        <section class="juntando">
-            <div class="imc">
-                <h2>IMC</h2>
-                <p>menos do que 18,5</p>
-                <p>entre 18,5 e 24,9</p>
-                <p>entre 25 e 29,9</p>
-                <p>entre 30 e 34,9 </p>
-                <p>entre 35 e 39,9 </p>
-                <p>mais do que 40</p>
-            </div>
-    
-            <div class="resultado">
-                <h2>resultado</h2>
-                <p>abaixo do peso</p>
-                <p>peso normal</p>
-                <p>sobrepeso</p>
-                <p>obesidade grau 1</p>
-                <p>obesidade grau 2</p>
-                <p>obesidade grau 3</p>
-            </div>
-        </section>
+        <h1>Calcule seu IMC</h1>
 
-        <form action="">
-            <h1>calcule seu IMC</h1>
-            <p>Peso:</p>
-            <input type="number" class="peso">
-
-            <p>Altura:</p>
-            <input type="text" class="altura">
-
-            <button class="calculo">calcular</button>
+        <form action="/" id="formulario" method="post">
+            <label for="peso">Peso</label>
+            <input type="text" id="peso">
+            <label for="peso">Altura</label>
+            <input type="text" id="altura">
+            <button type="Submit">Submit</button>
         </form>
+        <div id="resultado">
+            
+        </div>
     </section>
 
     <script src="script.js"></script>
