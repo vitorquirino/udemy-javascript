@@ -1,16 +1,8 @@
-const form = document.querySelector('#formulario');
+// (condicao) ? 'valor para verdadeiro' : 'valor para falso';
+const pontuacaoUsuario = 1000;
+const nivelUsuario = pontuacaoUsuario >= 1000 ? 'Usuário VIP' : 'Usuário normal';
 
-form.addEventListener('submit',function(event){
-    event.preventDefault();
-    console.log('evento previnido');
-    setResultado('olá mundo');
-});
+const corUsuario = 'pink';
+const padrao = corUsuario || 'preta';
+console.log(nivelUsuario,padrao);
 
-function setResultado (msg){
-    const resultado = document.querySelector('#resultado');
-    resultado.innerHTML = '';
-    const p = document.createElement('p');
-    p.classList.add('paragrafo-resultado');
-    p.innerHTML = 'qualquer coisa';
-    resultado.appendChild(p);
-}
