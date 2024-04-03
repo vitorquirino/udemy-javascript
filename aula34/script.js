@@ -1,7 +1,7 @@
 //let tem escopo de bloco {`...bloco}
 //var só tem escopo de função
-const vardadeira = true;
 /*
+const vardadeira = true;
 let nome = 'luiz'; //criando
 var nome2 = 'vitor'; //criando
 
