@@ -1,2 +1,10 @@
-const max2 = (x , y) =>  x > y ? x : y;
-console.log(max2(100,20));
+function Calculo(x,y){
+    if(x > y){
+        return x;
+    }else{
+        return y;
+    }
+};
+
+const numeros = Calculo(66,271);
+console.log(numeros);
