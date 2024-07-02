@@ -1,25 +1,15 @@
-var jogador1 = parseFloat(prompt('digite um numero'));
-var jogador2 = parseFloat(prompt('digite outro numero'));
+// ||
+// && tudo tem que ser true
+// !
+var num1 = parseFloat(prompt('digite um  numero'));
+var num2 = parseFloat(prompt('digite outro numero')); 
+var media = (num1 + num2) / 2;
 
-if(jogador1 === jogador2){
-    alert('voces empataram')
-}else{
-    var sort = parseInt( Math.random() * 2);
-
-    if(sort === 0) {
-        if(jogador1 < jogador2){
-            alert('ganhador foi o jogador1');
-        }else{
-            alert('ganhador foi o jogador 2');
-        }
-    }
-    else{
-        if(jogador1 > jogador2){
-            alert('ganhador foi o jogador 2');
-        }else{
-            alert('ganhador foi o jogador1');
-        }
-    }
+if(media > 5 && num1 > 0  && n2 > 0) {
+    alert('parabens voce foi aprovado');
+}
+else{
+    alert('que pena ,voce foi reprovado');
 }
 
 
