@@ -1,9 +1,22 @@
-var n1 = prompt('digite um numero');
-n1 = parseFloat(n1);
+var numero = prompt('digite um numero');
+numero = parseInt(numero);
 
-for(let i = 1; i <= 1000; i++){
-    document.write(n1 + 'x' + i + '=' + (n1 * i) + '<br>')
+var indicie = 0;
+
+while(indicie <= 1000){
+  document.write(numero + ' x ' + indicie + ' = ' + (numero * indicie) + '<br>' );
+
+  if(indicie % 10 === 0 && indicie > 0){
+    document.write('<hr>')
+  }
+
+  indicie++;
+
 }
+document.write('saiu do loop')
+
+
+
 //var indicie = 1001;
 //do{
   //  document.write(n1 + 'x' + indicie + '=' + (n1 * indicie) + '<br>')
