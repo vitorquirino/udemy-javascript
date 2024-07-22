@@ -1,10 +1,23 @@
-var btn = document.querySelector('#refresh');
-btn.addEventListener('click', () => {
-    location.reload()
-});
+var output = document.querySelector('#output');
+var mensagem = '';
 
-var numeroDigitado = prompt('digite um numero');
-numeroDigitado = parseFloat(numeroDigitado);
-for (var i = 1; i <= 1000; i++ ){t
-    document.write(numeroDigitado + ' x ' + i + ' = ' + (numeroDigiado * i) + '<br>')
-}
+
+function mostrarTabuada() {
+    var n1 = prompt("digite um numero");
+    n1 = parseFloat(n1);
+    limparTabuada();
+
+    var indice = 1;
+
+    while(indice <= 1000){
+        mensagem += n1 + ' x ' + indice + ' = ' + (n1 * indice) + '<br>';
+        indice++;
+    }
+    output.innerHTML = mensagem;
+
+};
+function limparTabuada (){
+    mensagem = ''
+    output.innerHTML = mensagem
+};
+
