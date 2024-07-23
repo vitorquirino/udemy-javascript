@@ -1,23 +1,24 @@
 var output = document.querySelector('#output');
-var mensagem = '';
+var mensagemTela = '';
 
-
-function mostrarTabuada() {
-    var n1 = prompt("digite um numero");
+function mostrarTabuada(){
+    var n1 = prompt('digite um numero,para ver a tabuada dela');
     n1 = parseFloat(n1);
     limparTabuada();
 
     var indice = 1;
 
-    while(indice <= 1000){
-        mensagem += n1 + ' x ' + indice + ' = ' + (n1 * indice) + '<br>';
+    while(indice <= 1000 ){
+        mensagemTela += n1 + " x " + indice + " = " +(n1 * indice) + "<br>";
         indice++;
-    }
-    output.innerHTML = mensagem;
 
-};
-function limparTabuada (){
-    mensagem = ''
-    output.innerHTML = mensagem
-};
+        output.innerHTML = mensagemTela;
+    }
+}
+
+function limparTabuada(){
+    mensagemTela ='';
+    output.innerHTML = mensagemTela;
+
+}
 
