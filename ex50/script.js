@@ -32,4 +32,3 @@ function dividir (){
     n1 = n1 / n;
     escreve();
 }
-
