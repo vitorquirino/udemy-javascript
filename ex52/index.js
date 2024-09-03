@@ -1,8 +1,4 @@
-console.log('ola mundo');
-console.log('ola caras');
-console.log('ola mulheres');
-
-let n1 = 1;
-let n2 = 1;
-const result = (n1 + n2);
-console.log(result);
+const jantar = Number(prompt('valor da janta'));
+const garcom = jantar * 0.10;
+const total = jantar + garcom;
+alert("taxa garcom R$ " + garcom.toFixed(2)  + " \ntotal " + total.toFixed(2));
